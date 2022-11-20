@@ -48,14 +48,14 @@
     bottom: -1px;
   }
 
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
   &--current {
     color: var(--accent-color);
   }
-}
-
-link:hover,
-link:focus {
-  color: var(--accent-color);
 }
 
 /* стилізуєм лого */

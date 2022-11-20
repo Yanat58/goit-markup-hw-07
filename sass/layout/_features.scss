@@ -1,0 +1,29 @@
+/* особливості */
+
+.features-list {
+  display: flex;
+  gap: 30px;
+  flex-basis: calc(100% / 4);
+
+  &__icon {
+    margin-bottom: 30px;
+    padding: 25px 100px;
+    background-color: var(--button-bg-color);
+  }
+
+  &__title {
+    @include text;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--title-text-color);
+  }
+
+  &__text {
+    min-width: 270px;
+
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+  }
+}
