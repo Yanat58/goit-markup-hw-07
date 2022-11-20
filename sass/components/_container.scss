@@ -10,3 +10,8 @@
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}

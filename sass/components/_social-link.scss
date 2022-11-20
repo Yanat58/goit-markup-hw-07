@@ -3,14 +3,10 @@
   justify-content: center;
   gap: 10px;
 
-  .team-card__ & {
-    margin-top: 16px;
-  }
-
   &__text {
     margin-bottom: 10px;
     font-weight: 700;
-    @include ttext;
+    @include text;
     color: var(--title-text-color);
   }
 
@@ -18,6 +14,7 @@
     fill: currentColor;
   }
 }
+
 .social__link {
   display: block;
   width: 44px;

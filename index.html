@@ -14,7 +14,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
-    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
@@ -66,7 +66,7 @@
       <section class="overlay">
         <div class="hero overlay__hero">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-          <button data-modal-open type="button" class="button">
+          <button data-modal-open type="button" class="hero__button">
             Замовити послугу
           </button>
         </div>
@@ -228,7 +228,7 @@
               <div class="team-card">
                 <h3 class="team-card__title">Ольга Рєпіна</h3>
                 <p class="team-card__text">Frontend Developer</p>
-                <ul class="social">
+                <ul class="social team-card__social">
                   <li class="social__item">
                     <a class="social__link" href="">
                       <svg class="social__icon" width="20" height="20">
@@ -271,7 +271,7 @@
               <div class="team-card">
                 <h3 class="team-card__title">Микола Тарасов</h3>
                 <p class="team-card__text">Marketing</p>
-                <ul class="social">
+                <ul class="social team-card__social">
                   <li class="social__item">
                     <a class="social__link" href="">
                       <svg class="social__icon" width="20" height="20">
@@ -314,7 +314,7 @@
               <div class="team-card">
                 <h3 class="team-card__title">Михайло Єрмаков</h3>
                 <p class="team-card__text">UI Designer</p>
-                <ul class="social">
+                <ul class="social team-card__social">
                   <li class="social__item">
                     <a class="social__link" href="">
                       <svg class="social__icon" width="20" height="20">
@@ -354,7 +354,7 @@
       </section>
       <section class="section customers">
         <div class="container">
-          <h2 class="customers__title">постійні клієнти</h2>
+          <h2 class="customers__title">Постійні клієнти</h2>
           <ul class="customers__list">
             <li>
               <a class="customers__link" href="">
@@ -427,65 +427,63 @@
                 >
               </li>
               <li class="address__item">
-                <a
-                  href="mailto:info@devstudio.com"
-                  class="address__link contacts link"
+                <a href="mailto:info@devstudio.com" class="address__link link"
                   >info@devstudio.com</a
                 >
               </li>
               <li class="address__item">
-                <a href="tel:+380961111111" class="address__link contacts link"
+                <a href="tel:+380961111111" class="address__link link"
                   >+38 096 111 11 11</a
                 >
               </li>
             </ul>
           </address>
         </div>
-        <div class="contacts-social-wrap">
-          <p class="social__text">приєднуйтесь</p>
-          <ul class="social contacts-social">
-            <li class="contacts-social__item">
-              <a class="contakts-social__link" href="">
-                <svg class="contakts-social__icon" width="20" height="20">
+        <div class="netwotks">
+          <p class="netwotks__text">приєднуйтесь</p>
+          <ul class="social">
+            <li class="social__item">
+              <a class="social__link social__link--color" href="">
+                <svg class="social__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="contacts-social__item">
-              <a class="contakts-social__link" href="">
-                <svg class="contakts-social__icon" width="20" height="20">
+            <li class="social__item">
+              <a class="social__link social__link--color" href="">
+                <svg class="social__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="contacts-social__item">
-              <a class="contakts-social__link" href="">
-                <svg class="contakts-social__icon" width="20" height="20">
+            <li class="social__item">
+              <a class="social__link social__link--color" href="">
+                <svg class="social__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="contacts-social__item">
-              <a class="contakts-social__link" href="">
-                <svg class="contakts-social__icon" width="20" height="20">
+            <li class="social__item">
+              <a class="social__link social__link--color" href="">
+                <svg class="social__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <div class="footer-newsletter">
-          <p class="footer-newsletter-text">Підпишіться на розсилку</p>
-          <form class="footer-newsletter-form">
+        <div class="newsletter footer-newsletter">
+          <p class="newsletter__text">Підпишіться на розсилку</p>
+          <form class="newsletter-form">
             <input
-              class="footer-newsletter-input"
+              class="newsletter-form__input"
               type="email"
               name="email"
               placeholder="E-mail"
             />
-            <button class="footer-newsletter-btn" type="submit">
+            <button class="button newsletter__btn" type="submit">
               Підписатися
-              <svg class="footer-newsletter-icon" width="24" height="24">
+              <svg class="button__icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
@@ -537,7 +535,7 @@
           <a href=""><span class="checkbox-part-text"> Умови договору</span></a>
         </label>
 
-        <button class="modal-form-btn" type="submit">
+        <button class="button" type="submit">
           <span>Відправити</span>
         </button>
 

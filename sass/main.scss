@@ -1,12 +1,19 @@
 @import './utils/variables';
-@import './base/modern';
-@import './base/reset';
 @import './utils/visually-hidden';
 @import './utils/mixins';
+
+@import './base/modern';
+@import './base/reset';
+
 @import './components/container';
 @import './components/header';
 @import './components/button';
 @import './components/social-link';
+
 @import './layout/hero';
 @import './layout/features';
 @import './layout/gallery';
+@import './layout/team';
+@import './layout/customers';
+@import './components/footer';
+@import './layout/portfolio';
