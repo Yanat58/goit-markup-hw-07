@@ -1,4 +1,4 @@
-@charset "UTF-8";
+
 :root {
   --primary-text-color: #757575;
   --second-text-color: rgba(255, 255, 255, 0.6);
@@ -1014,6 +1014,60 @@ a {
   color: var(--primary-text-color);
 }
 
+.checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 9px;
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142857143;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.checkbox__input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.checkbox__icon .checkbox__unchecked {
+  opacity: 1;
+}
+
+.checkbox:checked + .checkbox__icon .checkbox__unchecked {
+  opacity: 0;
+}
+
+.checkbox__icon .checkbox__checked {
+  opacity: 0;
+}
+
+.checkbox__input:checked + .checkbox__icon .checkbox__checked {
+  opacity: 1;
+}
+
+.checkbox__text,
+.checkbox__text--link {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.checkbox__text--link {
+  text-decoration: underline;
+  color: var(--accent-color);
+}
+
 /* modal window */
 .backdrop {
   position: fixed;
@@ -1134,58 +1188,6 @@ a {
 input:focus-visible,
 textarea:focus-visible {
   outline: none;
-}
-
-.modal-form-checkbox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 30px;
-  margin-left: 12px;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
-}
-
-.checkbox {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.checkbox-label {
-  display: block;
-  margin-left: 8px;
-  margin-right: 8px;
-}
-
-.checkbox-part-text {
-  text-decoration: underline;
-  color: var(--accent-color);
-}
-
-.icon-checkbox {
-  display: block;
-  width: 16px;
-  height: 15px;
-  background-image: url(../images/icon-unceck.svg);
-}
-
-.checkbox:checked + .icon-checkbox {
-  background-color: var(--accent-color);
-  background-image: url(../images/icon-check\ .svg);
-  background-size: contain;
-  background-origin: border-box;
-  border-color: transparent;
 }
 
 .close-btn {
