@@ -4,20 +4,14 @@
   fill: currentColor;
 }
 .customers__list {
-  display: flex;
-  align-items: center;
+  @include centredFlex;
   justify-content: center;
   gap: 30px;
 }
 
 .customers__title {
+  @include title;
   margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--title-text-color);
 }
 
 .customers__link {
