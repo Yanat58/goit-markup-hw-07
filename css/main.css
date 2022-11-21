@@ -1136,23 +1136,22 @@ textarea:focus-visible {
   outline: none;
 }
 
-.modal-checkbox {
+.modal-form-checkbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 30px;
+  margin-left: 12px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
-.modal-form__ .modal-checkbox {
-  margin-bottom: 30px;
-  margin-left: 12px;
-}
-.modal-checkbox__checkbox {
+
+.checkbox {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -1162,26 +1161,28 @@ textarea:focus-visible {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.modal-checkbox__label {
+
+.checkbox-label {
   display: block;
   margin-left: 8px;
   margin-right: 8px;
 }
-.modal-checkbox__text {
+
+.checkbox-part-text {
   text-decoration: underline;
   color: var(--accent-color);
 }
 
-.modal-checkbox__icon {
+.icon-checkbox {
   display: block;
   width: 16px;
   height: 15px;
   background-image: url(../images/icon-unceck.svg);
 }
 
-.modal-checkbox__checkbox:checked .modal-checkbox__icon {
+.checkbox:checked + .icon-checkbox {
   background-color: var(--accent-color);
-  background-image: url(../images/icon-check\.svg);
+  background-image: url(../images/icon-check\ .svg);
   background-size: contain;
   background-origin: border-box;
   border-color: transparent;

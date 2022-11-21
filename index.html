@@ -14,7 +14,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
-    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
   </head>
 
   <body>
@@ -528,12 +527,15 @@
           ></textarea>
         </label>
 
-        <label class="modal-checkbox modal-form__modal-checkbox">
-          <input
-            class="modal-checkbox__checkbox"
-            type="checkbox"
-            name="consent"
-          />
+        <label class="modal-form-checkbox">
+          <input class="checkbox" type="checkbox" name="consent" />
+          <span class="icon-checkbox"> </span>
+          <span class="checkbox-label">Погоджуюся з розсилкою та приймаю</span>
+          <a href=""><span class="checkbox-part-text"> Умови договору</span></a>
+        </label>
+
+        <!-- <label class="modal-checkbox modal-form__modal-checkbox">
+          <input class="modal-checkbox__input" type="checkbox" name="consent" />
           <span class="modal-checkbox__icon"> </span>
           <span class="modal-checkbox__label"
             >Погоджуюся з розсилкою та приймаю</span
@@ -541,7 +543,7 @@
           <a href=""
             ><span class="modal-checkbox__text"> Умови договору</span></a
           >
-        </label>
+        </label> -->
 
         <button class="button" type="submit">
           <span>Відправити</span>
